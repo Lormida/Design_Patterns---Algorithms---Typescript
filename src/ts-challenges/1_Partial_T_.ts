@@ -1,6 +1,6 @@
 export {}
 
-type Foo = {
+interface Foo {
   a: string
   b: number
   c: boolean
@@ -14,20 +14,20 @@ type MyPartial<T extends object> = {
 const a: MyPartial<Foo> = {}
 
 const b: MyPartial<Foo> = {
-  a: 'BFE.dev'
+  a: 'BFE.dev',
 }
 
 const c: MyPartial<Foo> = {
-  b: 123
+  b: 123,
 }
 
 const d: MyPartial<Foo> = {
   b: 123,
-  c: true
+  c: true,
 }
 
 const e: MyPartial<Foo> = {
   a: 'BFE.dev',
   b: 123,
-  c: true
+  c: true,
 }

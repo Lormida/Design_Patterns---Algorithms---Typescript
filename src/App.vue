@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { Subject, Subscriber } from './design-patternes/observer'
+
 </script>
 
 <template>
