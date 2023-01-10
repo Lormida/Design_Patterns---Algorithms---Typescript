@@ -43,3 +43,9 @@ export class FinishCommand implements ICommand {
   }
 }
 
+const invoker = new Invoker()
+
+invoker.setOnStart(new StartCommand())
+invoker.setOnFinish(new FinishCommand())
+
+invoker.doSomeAction()
