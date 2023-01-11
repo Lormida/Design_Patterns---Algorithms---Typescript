@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Component, Mediator } from './design-patternes/Behavioral/Mediator'
+
 </script>
 
 <template>
